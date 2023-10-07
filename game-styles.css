@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(38, 38, 38);
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.robot {
+  font-size: 72px;
+  animation: topdown 0.9s ease-in;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #f7f6f6;
+  text-align: center;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 25px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 48px;
+  font-family: "Dela Gothic One", cursive;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2,
+span,
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  line-height: 36px;
+  animation: text-animation 2s ease;
+}
+
+h2 {
+  color: #f7f6f6;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+p {
+  color: #f7f6f6;
+  margin: 20px 0;
+}
+
+span {
+  color: rgb(96, 144, 96);
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  background-color: rgb(96, 144, 96);
+  color: #f7f6f6;
+  font-size: 20px;
+  border: none;
+  transition: transform 0.1s ease-in;
+}
+
+.player-choice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/**** animations ****/
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
